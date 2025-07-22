@@ -10,7 +10,7 @@ public class GeneralizedHarmonic {
             harmonica += 1.0 / Math.pow(i, r);
         }
 
-        System.out.println("H(" + n + ", " + r + ") = " + harmonica);
+        System.out.println(harmonica);
 
     }
 }

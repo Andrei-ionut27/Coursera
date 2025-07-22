@@ -1,30 +1,27 @@
 public class RandomWalker {
     public static void main(String[] args) {
-
-        int r = Integer.parseInt(args[0]);
-
+        int stepsToTake = 15;  // fixed number of steps
         int x = 0;
         int y = 0;
-        int steps = 0;
 
-        System.out.println("(" + x + ", " + y + ")");
-        java.util.Random rand = new java.util.Random();
+        System.out.println("(" + x + ", " + y + ")");  // starting point
 
-        while (Math.abs(x) + Math.abs(y) < r) {
-            int direction = rand.nextInt(4);
+        for (int step = 1; step <= stepsToTake; step++) {
+            double direction = Math.random();
 
-            if (direction == 0) {
-                y++;
-            }else if (direction == 1) {
-                x++;
-            } else if (direction == 2) {
-                y--;
-            }else {
-                x--;
+            if (direction < 0.25) {
+                y++;  // north
+            } else if (direction < 0.50) {
+                x++;  // east
+            } else if (direction < 0.75) {
+                y--;  // south
+            } else {
+                x--;  // west
             }
-            steps++;
+
             System.out.println("(" + x + ", " + y + ")");
         }
-        System.out.println("Total steps = " + steps);
+
+        System.out.println("Total steps = " + stepsToTake);
     }
 }
