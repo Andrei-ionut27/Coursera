@@ -22,25 +22,25 @@ public class RandomWalker {
                 break;
             }
 
-            // Generate a random number between 0 and 1 using Math.random()
-            double rand = Math.random();
-
-            // Use conditionals to pick direction
-            if (rand < 0.25) {
-                x = x + 1;  // East
-            } else if (rand < 0.50) {
-                x = x - 1;  // West
-            } else if (rand < 0.75) {
-                y = y + 1;  // North
-            } else {
-                y = y - 1;  // South
-            }
-
-            steps = steps + 1;
-            System.out.println("(" + x + ", " + y + ")");
-        }
-
-        System.out.print("steps = ");
-        System.out.println(steps);
-    }
-}
+//            // Generate a random number between 0 and 1 using Math.random()
+//            double rand = Math.random();
+//
+//            // Use conditionals to pick direction
+//            if (rand < 0.25) {
+//                x = x + 1;  // East
+//            } else if (rand < 0.50) {
+//                x = x - 1;  // West
+//            } else if (rand < 0.75) {
+//                y = y + 1;  // North
+//            } else {
+//                y = y - 1;  // South
+//            }
+//
+//            steps = steps + 1;
+//            System.out.println("(" + x + ", " + y + ")");
+//        }
+//
+//        System.out.print("steps = ");
+//        System.out.println(steps);
+//    }
+//}
