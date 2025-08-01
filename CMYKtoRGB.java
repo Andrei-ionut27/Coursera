@@ -11,8 +11,8 @@ public class CMYKtoRGB {
  int blue = (int) Math.round(255 * white * (1 - yellow));
 
 
-// System.out.println("Red: " + red);
-// System.out.println("Green: " + green);
-// System.out.println("blue: " + blue);
+ System.out.println("Red: " + red);
+ System.out.println("Green: " + green);
+ System.out.println("blue: " + blue);
     }
-}git
+}
